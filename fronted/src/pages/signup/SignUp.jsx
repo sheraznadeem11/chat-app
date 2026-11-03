@@ -17,9 +17,9 @@ const SignUp = () => {
 
 
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-    console.log(inputs);
+        await SignUp(inputs)
   };
   return (
     <div className="flex min-w-96 mx-auto items-center justify-center">
